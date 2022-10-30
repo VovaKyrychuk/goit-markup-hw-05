@@ -28,7 +28,7 @@
             ><span class="logo-accent">Web</span>Studio</a
           >
           <ul class="container-links list">
-            <li>
+            <li class="list-navi">
               <a class="header-link current" href="./index.html">Студія</a>
             </li>
             <li>
@@ -65,7 +65,9 @@
           Ефективні рішення для <br />
           вашого бізнесу
         </h1>
-        <button class="btn" type="button">Замовити послугу</button>
+        <button class="btn" type="button" data-modal-open>
+          Замовити послугу
+        </button>
       </section>
       <section class="section section-benefits">
         <div class="cont-benefits container">
@@ -132,6 +134,9 @@
                 width="370"
                 height="294"
               />
+              <div class="work-lable">
+                <h4 class="work-title">Десктопні додатки</h4>
+              </div>
             </li>
             <li>
               <img
@@ -140,6 +145,9 @@
                 width="370"
                 height="294"
               />
+              <div class="work-lable">
+                <h4 class="work-title">Мобільні додатки</h4>
+              </div>
             </li>
             <li>
               <img
@@ -148,6 +156,9 @@
                 width="370"
                 height="294"
               />
+              <div class="work-lable">
+                <h4 class="work-title">Дизайнерські рішення</h4>
+              </div>
             </li>
           </ul>
         </div>
@@ -543,5 +554,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-clos-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
