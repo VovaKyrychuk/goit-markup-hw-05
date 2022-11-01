@@ -346,6 +346,9 @@ body {
 .project-item:hover .portfolio-text {
   transform: translateY(0);
 }
+.project-link:focus .portfolio-text {
+  transform: translateY(0);
+}
 /*---Наші переваги---*/
 .section {
   padding-top: 94px;
